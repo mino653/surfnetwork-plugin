@@ -1,0 +1,19 @@
+name: SurfNetwork
+main: com.surfnetwork.survival.Main
+version: 1.0
+api-version: 1.20
+commands:
+  sethome:
+    description: Set a home (max 3)
+  home:
+    description: Teleport to a home
+  claim:
+    description: Claim current chunk
+  trust:
+    description: Trust a player in this chunk
+  unclaim:
+    description: Unclaim current chunk
+  top:
+    description: Show top richest players
+  spawn:
+    description: Teleport to spawn with 3s delay
