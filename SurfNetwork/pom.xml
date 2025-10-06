@@ -14,7 +14,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <paper-api.version>1.21.8</paper-api.version>
+        <paper-api.version>1.21.7-R0.1-SNAPSHOT</paper-api.version>
     </properties>
 
     <repositories>
