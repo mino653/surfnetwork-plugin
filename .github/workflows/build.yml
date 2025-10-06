@@ -27,8 +27,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: Clear Paper API Cache
+        run: rm -rf ~/.m2/repository/io/papermc/paper
+
       - name: List repo contents
-        run: ls -R   # Optional: to debug folder structure
+        run: ls -R   # Optional, for debugging
 
       - name: Build with Maven
         run: mvn clean package
