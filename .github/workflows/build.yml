@@ -27,12 +27,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: List repo contents
+        run: ls -R   # Optional: to debug folder structure
+
       - name: Build with Maven
         run: mvn clean package
-        working-directory: ./surfnetwork   # ⬅ HERE is the important fix
+        working-directory: ./SurfNetwork
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: SurfNetwork-JAR
-          path: surfnetwork/target/*.jar   # ⬅ This matches the build output
+          path: SurfNetwork/target/*.jar
